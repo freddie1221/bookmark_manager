@@ -1,13 +1,13 @@
 require 'sinatra/base'
 
-class Bookmark_manager < Sinatra::Base
+class BookmarkManager < Sinatra::Base
 
-
-  get '/' do 
+  get '/' do
     erb :index
   end
 
-
-
+  get '/bookmarks' do
+    erb :bookmarks
+  end
 
 end
