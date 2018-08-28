@@ -11,4 +11,5 @@ As a user
 So that I can see what bookmarks I have
 I can show a list of bookmarks
 
+https://i.imgur.com/1gbsuua.png
 
