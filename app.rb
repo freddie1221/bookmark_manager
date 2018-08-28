@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require_relative './lib/bookmark'
 
 class BookmarkManager < Sinatra::Base
 
@@ -7,10 +8,9 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/bookmarks' do
-    name = "MyFirstBookmark"
-    url = "www.google.co.uk"
-    @b1 = Bookmark.new("MyFirstBookmark", "www.google.co.uk")
-    @b2 = Bookmark.new("SecondBookmark", "www.bbc.co.uk/news")
+    # name = "MyFirstBookmark"
+    # url = "www.google.co.uk"
+    # @b1 = Bookmark.new("MyFirstBookmark", "www.google.co.uk")
     @b_all = Bookmark.all
     erb :bookmarks
   end
